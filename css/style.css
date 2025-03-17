@@ -1,0 +1,22 @@
+:root {
+	--bakcground-color:#302C42;
+	--text-color:#fff;
+	--gradient-color-1:#8176AF;
+	--gradient-color-2:#C0B7E8;	
+	--gradient-color-3:#211E2E;
+	--gradient-color-4:#433D60;
+}
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
