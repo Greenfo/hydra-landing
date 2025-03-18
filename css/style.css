@@ -57,7 +57,31 @@
 	background-color:var(--bakcground-color);
 	color:var(--text-color);
 	font-family:"Montserrat";
-	
+	position:relative;	
+}
+
+.header::before {
+	content:'';
+	width: 735px;
+	height: 845px;
+	position:absolute;
+	background:url("../images/decoration/hero_dec.png");
+	top:0;
+	right:0;	
+}
+.header::after {
+	content:'';
+	width: 238px;
+	height: 561px;
+	position:absolute;
+	background:url("../images/decoration/hero_dec-2.png");
+	top:30%;
+	left:0;	
+}
+
+.header__top {
+	position: relative;
+	z-index:2;	
 }
 .header__top-inner {
 	padding-top: 50px;
@@ -86,6 +110,10 @@
 	padding-bottom: 5px;	
 }
 
+.header__hero {
+	position: relative;
+	z-index: 2;	
+}
 .header__hero-inner {
 	display: flex;	
 	justify-content: space-between;
@@ -133,6 +161,43 @@
 	transition: right 0.4s;
 }
  
+.header__contacts {
+	display: flex;	
+	justify-content: space-between;
+	padding: 25px 50px;
+	border-radius: 90px;
+	box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+	background: radial-gradient(50% 100% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+}
+
+.header__contacts-item {
+	display: flex;	
+	align-items: center;
+	padding-right: 39px;	
+	padding-left: 45px;	
+	border-right: 1px solid rgba(192,183,232,33%);
+}
+
+.header__contacts-item:first-child {
+	padding-left:0;
+}
+.header__contacts-item:last-child {
+	padding-right:0;
+	border-right: none;
+}
+.header__contacts-item-icon {
+	margin-right:30px;	
+}
+.header__contacts-item-text {
+	padding: 33px 0;		
+}
+.header__contacts-item-title {
+	font-weight: 700;
+	font-size: 24px;	
+	margin-bottom: 10px;
+}
+
+
 
 
 
