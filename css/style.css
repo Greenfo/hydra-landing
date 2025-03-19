@@ -6,6 +6,11 @@
 	--gradient-color-3:#211E2E;
 	--gradient-color-4:#433D60;
 }
+
+body {
+	font-family:"Montserrat", sans-serif;	
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -196,6 +201,82 @@
 	font-size: 24px;	
 	margin-bottom: 10px;
 }
+
+
+.about {
+	background-color: var(--bakcground-color);	
+	color:#fff;
+}
+
+
+.about__inner {
+	padding-top:90px;	
+}
+
+.about__intro {
+	display: flex;	
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.about__intro-title {
+	font-weight: 700;
+	font-size: 36px;	
+	max-width:298px;
+	line-height:56px;
+	position:relative;
+}
+
+.about__intro-title::after {
+	content:'';
+	position: absolute;
+	right: -65%;
+	bottom:15px;							
+	z-index:11;
+	display: inline-block;
+	background-image:url("../images/icons/arrow-long.png");
+	width:200px;	
+	height:33px;
+	transition: right 0.4s;
+}
+.about__intro-title span{
+	font-weight: 300;
+}
+
+.about__intro-text {
+	max-width:652px;	
+	line-height:24px;	
+}
+
+.about__main {
+	display: flex;	
+	justify-content: space-between;
+	align-items:center;
+	gap:15px;
+}
+
+.about__content {
+	max-width:630px;	
+}
+
+.about__title {
+	font-weight: 700;
+	font-size: 36px;	
+	margin-bottom: 5px;
+}
+
+.about__subtitle {
+	font-weight: 300;
+	font-size: 36px;	
+	display: inline-block;
+	margin-bottom: 42px;
+}
+
+.about__text {
+	margin-bottom: 28px;	
+	line-height:28px;
+}
+
 
 
 
